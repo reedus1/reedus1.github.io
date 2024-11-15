@@ -11,7 +11,12 @@
         <div class="container">
             <div class="header">
                 <h1>Daniel Reed Vance</h1>
-                <p>daniel_vance_@outlook.com</p>
+                <p>Contact me: <span id="email"></span></p>
+                <script>
+                    const user = "daniel_vance_";
+                    const domain = "outlook.com";
+                    document.getElementById("email").textContent = `${user}@${domain}`;
+                </script>
             </div>
 
             <div class="section">
