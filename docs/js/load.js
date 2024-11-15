@@ -1,8 +1,3 @@
-function load_email(){
-    const user = "daniel_vance_";
-    const domain = "outlook.com";
-    document.getElementById("email").textContent = `${user}@${domain}`;
-}
 function load_data(){
     try{
         fetch('../json/data.json')
