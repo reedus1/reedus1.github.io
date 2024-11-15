@@ -18,7 +18,7 @@ function load_data(){
             });
             // Populate the skills and education from JSON data
             const it_skillsList = document.getElementById('it_skills');
-            data.skills.forEach(it_skill => {
+            data.it_skills.forEach(it_skill => {
                 const li = document.createElement('li');
                 li.textContent = it_skill;
                 it_skillsList.appendChild(li);
