@@ -11,7 +11,6 @@ function load_data(){
         const skillsList = document.getElementById('skills');
         
         data.skills.forEach(skill => {
-            print(skill)
             const li = document.createElement('li');
             li.textContent = skill;
             skillsList.appendChild(li);
