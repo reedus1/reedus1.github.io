@@ -17,27 +17,31 @@ function load_data(){
                 educationList.appendChild(li);
             });
             // Populate the IT skills from JSON data
-            const it_skillsList = document.getElementById('it_skills');
-            for(const category in data.it_skills)
-            {
-                const section = document.createElement('section');
-                //Category title
-                const title = document.createElement('h3');
-                title.textContent = category;
-                section.appendChild(title);
-                //List of items from the category
-                const list = document.createElement('ul');
-                data.it_skills[category].forEach(item =>{
-                    //Create the List Items
-                    const li = document.createElement('li');
-                    li.textContent = item;
-                    list.appendChild(li);
-                })
-                //Append the list
-                section.appendChild(list);
-                //Append the section to main container
-                it_skillsList.appendChild(section);
-            }
+            document.addEventListener('DOMContentLoaded', () =>{
+                
+                const it_skillsList = document.getElementById('it_skills');
+                for(const category in data.it_skills)
+                {
+                    const section = document.createElement('section');
+                    //Category title
+                    const title = document.createElement('h3');
+                    title.textContent = category;
+                    section.appendChild(title);
+                    //List of items from the category
+                    const list = document.createElement('ul');
+                    data.it_skills[category].forEach(item =>{
+                        //Create the List Items
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        list.appendChild(li);
+                    })
+                    //Append the list
+                    section.appendChild(list);
+                    //Append the section to main container
+                    it_skillsList.appendChild(section);
+                }
+            })
+            
 
             // Populate the skills and education from JSON data
             const skillsList = document.getElementById('skills');
