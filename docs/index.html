@@ -11,12 +11,7 @@
         <div class="container">
             <div class="header">
                 <h1>Daniel Reed Vance</h1>
-                <p>Contact me: <span id="email"></span></p>
-                <script>
-                    const user = "daniel_vance_";
-                    const domain = "outlook.com";
-                    document.getElementById("email").textContent = `${user}@${domain}`;
-                </script>
+                <p onload="load_email()">Contact me: <span id="email"></span></p>
             </div>
 
             <div class="section">
