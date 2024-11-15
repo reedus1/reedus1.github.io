@@ -22,7 +22,7 @@ function load_data(){
             {
                 const section = document.createElement('section');
                 //Category title
-                const title = documnt.createElement('h3');
+                const title = document.createElement('h3');
                 title.textContent = category;
                 section.appendChild(title);
                 //List of items from the category
