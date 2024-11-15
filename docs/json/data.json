@@ -1,54 +1,60 @@
 {
-    "skills": ["Java","JavaScript", "Python","HTML/CSS", "Bash","C","Visual C#"],
-    "it_skills": 
-    {
-        "Software": [
+  "skills": ["Java", "JavaScript", "Python", "HTML/CSS", "Bash", "C", "Visual C#"],
+  "it_skills": {
+      "Software": [
           "Microsoft Windows OS",
           "Linux Distributions",
           "Driver Installations"
-        ],
-        "Peripherals": [
+      ],
+      "Peripherals": [
           "Printers",
           "Scanners",
           "Monitors"
-        ],
-        "Networking": [
+      ],
+      "Networking": [
           "Networking Basics",
           "Router Configuration",
           "IP Addressing",
           "DNS Setup"
-        ],
-        "Hardware": [
+      ],
+      "Hardware": [
           "Computer Hardware",
           "PC Assembly",
           "Troubleshooting"
-        ]
-    },
-    "education": [
+      ]
+  },
+  "education": [
       {
-        "degree": "Bachelor of Science in Information Systems",
-        "institution": "West Virginia University Institute of Technology",
-        "year": "2023"
+          "degree": "Bachelor of Science in Information Systems",
+          "institution": "West Virginia University Institute of Technology",
+          "year": "2023"
       },
       {
-        "degree": "Associate of Science in Information Technology",
-        "institution": "Southern West Virginia Community and Technical College",
-        "year": "2025 (Expected)"
+          "degree": "Associate of Science in Information Technology",
+          "institution": "Southern West Virginia Community and Technical College",
+          "year": "2025 (Expected)"
       }
-    ],
-    "experience":[
-        {
-            "title": "Information Technology Intern Job Shadow",
-            "company": "Beckley VA Hospital IT Department",
-            "fromtodate": "August 15, 2021 - December 7, 2021",
-            "duties":["Keep Track of Inventory", "IT Ticketing System", "Installed Printers, monitors, new computers","Created network drops"]
-        },
-        {
-            "title": "Professor Assistant",
-            "company": "WVUIT Student Worker",
-            "fromtodate": "September, 2019 - May, 2020",
-            "duties":["Did research into CS Projects for Dr. Munasinghe","Met weekly with Dr. Munasinghe to discuss project progress"]
-        }
-    ]
-  }
-  
+  ],
+  "experience": [
+      {
+          "title": "Information Technology Intern Job Shadow",
+          "company": "Beckley VA Hospital IT Department",
+          "fromtodate": "August 15, 2021 - December 7, 2021",
+          "duties": [
+              "Keep Track of Inventory",
+              "IT Ticketing System",
+              "Installed Printers, monitors, new computers",
+              "Created network drops"
+          ]
+      },
+      {
+          "title": "Professor Assistant",
+          "company": "WVUIT Student Worker",
+          "fromtodate": "September, 2019 - May, 2020",
+          "duties": [
+              "Did research into CS Projects for Dr. Munasinghe",
+              "Met weekly with Dr. Munasinghe to discuss project progress"
+          ]
+      }
+  ]
+}
