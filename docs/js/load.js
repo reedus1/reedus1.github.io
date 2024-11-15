@@ -1,5 +1,5 @@
 function load_data(){
-    fetch('data.json')
+    fetch('./json/data.json')
     .then(res => { 
         if(!res.ok)
         {
@@ -11,6 +11,7 @@ function load_data(){
         const skillsList = document.getElementById('skills');
         
         data.skills.forEach(skill => {
+            print(skill)
             const li = document.createElement('li');
             li.textContent = skill;
             skillsList.appendChild(li);
