@@ -70,3 +70,16 @@ function load_data(){
         container.innerHTML = '<p>Sorry, we are unable to load the resume at this time. Please <a href="resume.pdf" target="_blank">click here</a> to view the PDF version.</p>';
     }
 }
+//Toggle to light or dark mode for the webpage
+function light_mode_toggle()
+{
+    const stylesheet = document.getElementById('style-sheet-theme');
+    // Check if the current stylesheet is dark mode
+    if (stylesheet.href.includes('./css/styles_light_mode.css')) {
+        // Switch to dark mode
+        stylesheet.href = './css/style_dark_mode.css';
+    } else {
+        // Switch to light mode
+        stylesheet.href = './css/styles_light_mode.css';
+    }
+}
