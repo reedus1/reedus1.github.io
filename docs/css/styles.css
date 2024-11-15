@@ -19,6 +19,7 @@ body {
 .header h1 {
     margin: 0;
     font-size: 2.5em;
+    color: rgb(127, 176, 255);
 }
 .header p {
     margin: 1px 0 2px 0;
@@ -37,6 +38,7 @@ body {
 .section ul li {
     margin-bottom: 10px;
 }
+
 #contact-form-container {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -45,26 +47,56 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow: auto;
 }
 
 form {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#contact-me{
+    text-align: center;
+    font-size: 32px;
+    margin-top: -2%;
+    margin-bottom: -2%;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    background-color:black;
 }
 
-button {
+input, textarea {
+    margin-bottom: -50px;
+    resize: none;
+    width: 100%;  /* Makes them scale to the form width */
+    max-width: 400px; /* Limits max width for larger screens */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    max-width: 400px; /* Same width as inputs */
     padding: 10px;
     font-size: 16px;
     background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 

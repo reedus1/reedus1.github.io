@@ -1,13 +1,20 @@
-<div id="contact-form-container">
-    <form action="https://formspree.io/f/xrbgkwbq" method="POST">
-        <label>Your email:
-            <input type="email" name="email">
-        </label>
-        <label>
-            Your message:
-            <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div id="contact-form-container">
+            <form action="https://formspree.io/f/xrbgkwbq" method="POST" onsubmit="window.close();">
+                <p id="contact-me">Contact Me</p>
+                <input type="email" name="email" placeholder="Enter Your Email" required><br>
+                <textarea placeholder="Enter Your Message" name="message" required></textarea><br>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </body>
+</html>
