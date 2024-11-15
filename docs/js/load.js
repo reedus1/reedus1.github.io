@@ -11,6 +11,7 @@ function load_data(){
         data.experience.forEach(exp =>{
             const li = document.createElement('li');
             li.innerHTML = `JobTitle: ${exp.title} <br>Company: ${exp.company}<br>Duties: ${exp.duties.join('<br>')}` 
+            document.getElementById('experience').appendChild(li);
         })
         // Populate the skills and education from JSON data
         const skillsList = document.getElementById('skills');
