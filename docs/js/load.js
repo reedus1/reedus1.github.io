@@ -25,4 +25,4 @@ function load_data(){
     })
 }
 //Load the Json Elements on the Page
-window.addEventListener('load', load_data);
+//window.addEventListener('load', load_data);
