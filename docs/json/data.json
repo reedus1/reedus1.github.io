@@ -1,5 +1,7 @@
 {
-    "skills": ["JavaScript", "Python", "SQL", "HTML/CSS", "Networking"],
+    "skills": ["Java","JavaScript", "Python","HTML/CSS", "Bash","C","Visual C#"],
+    "it_skills":["Computer Hardware","Printers", "Networking","Microsoft Windows OS",
+    "Linux Distros","Driver Installations"],
     "education": [
       {
         "degree": "Bachelor of Science in Information Systems",
