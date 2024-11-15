@@ -7,9 +7,13 @@ function load_data(){
         }
         return res.json();
     }).then(data =>{
+        const expList = document.getElementById('experience');
+        data.experience.forEach(exp =>{
+            const li = document.createElement('li');
+            li.innerHTML = `JobTitle: ${exp.title} <br>Company: ${exp.company}<br>Duties: ${exp.duties.join('<br>')}` 
+        })
         // Populate the skills and education from JSON data
         const skillsList = document.getElementById('skills');
-        
         data.skills.forEach(skill => {
             const li = document.createElement('li');
             li.textContent = skill;
@@ -24,5 +28,3 @@ function load_data(){
         });
     })
 }
-//Load the Json Elements on the Page
-//window.addEventListener('load', load_data);

@@ -11,6 +11,20 @@
         "institution": "Southern West Virginia Community and Technical College",
         "year": "2025 (Expected)"
       }
+    ],
+    "experience":[
+        {
+            "title": "Information Technology Intern Job Shadow",
+            "company": "Beckley VA Hospital IT Department",
+            "fromtodate": "August 15, 2021 - December 7, 2021",
+            "duties":["Keep Track of Inventory", "IT Ticketing System", "Installed Printers, monitors, new computers","Created network drops"]
+        },
+        {
+            "title": "Professor Assistant",
+            "company": "WVUIT Student Worker",
+            "fromtodate": "September, 2019 - May, 2020",
+            "duties":["Did research into CS Projects for Dr. Munasinghe","Met weekly with Dr. Munasinghe to discuss project progress"]
+        }
     ]
   }
   
