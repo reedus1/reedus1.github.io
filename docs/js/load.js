@@ -1,5 +1,5 @@
 function load_data(){
-    fetch('./json/data.json')
+    fetch('../json/data.json')
     .then(res => { 
         if(!res.ok)
         {
@@ -26,4 +26,4 @@ function load_data(){
     })
 }
 //Load the Json Elements on the Page
-window.onload(load_data());
+window.addEventListener('load', load_data);
