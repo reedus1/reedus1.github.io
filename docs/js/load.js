@@ -16,20 +16,41 @@ function load_data(){
                 li.textContent = `${edu.degree} from ${edu.institution} (${edu.year})`;
                 educationList.appendChild(li);
             });
-            // Populate the skills and education from JSON data
+            // Populate the IT skills from JSON data
             const it_skillsList = document.getElementById('it_skills');
-            data.it_skills.forEach(it_skill => {
-                const li = document.createElement('li');
-                li.textContent = it_skill;
-                it_skillsList.appendChild(li);
-            });
+            for(const category in data.it_skills)
+            {
+                const section = document.createElement('section');
+                //Category title
+                const title = documnt.createElement('h3');
+                title.textContent = category;
+                section.appendChild(title);
+                //List of items from the category
+                const list = document.createElement('ul');
+                data.it_skills.forEach(item =>{
+                    //Create the List Items
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    list.appendChild(li);
+                })
+                //Append the list
+                section.appendChild(list);
+                //Append the section to main container
+                it_skillsList.appendChild(section);
+            }
+
             // Populate the skills and education from JSON data
             const skillsList = document.getElementById('skills');
-            data.skills.forEach(skill => {
-                const li = document.createElement('li');
-                li.textContent = skill;
-                skillsList.appendChild(li);
+            let item_list = "";
+            //Loop through the JSON data and append them to the string list 
+            data.skills.forEach((skill,index) => {
+                item_list += (skill);
+                if (index < data.skills.length - 1){
+                    item_list += ', ' //Adds the comma to the list of items
+                }
             });
+            //Set the content of the Skills Element
+            skillsList.appendChild(item_list);
             //Experience, From json data
             const expList = document.getElementById('experience');
             data.experience.forEach(exp =>{

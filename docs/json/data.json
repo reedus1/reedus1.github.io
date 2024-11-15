@@ -1,7 +1,29 @@
 {
     "skills": ["Java","JavaScript", "Python","HTML/CSS", "Bash","C","Visual C#"],
-    "it_skills":["Computer Hardware","Printers", "Networking","Microsoft Windows OS",
-    "Linux Distributions","Driver Installations"],
+    "it_skills": 
+    {
+        "Software": [
+          "Microsoft Windows OS",
+          "Linux Distributions",
+          "Driver Installations"
+        ],
+        "Peripherals": [
+          "Printers",
+          "Scanners",
+          "Monitors"
+        ],
+        "Networking": [
+          "Networking Basics",
+          "Router Configuration",
+          "IP Addressing",
+          "DNS Setup"
+        ],
+        "Hardware": [
+          "Computer Hardware",
+          "PC Assembly",
+          "Troubleshooting"
+        ]
+    },
     "education": [
       {
         "degree": "Bachelor of Science in Information Systems",
