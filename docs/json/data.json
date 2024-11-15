@@ -1,0 +1,16 @@
+{
+    "skills": ["JavaScript", "Python", "SQL", "HTML/CSS", "Networking"],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Information Systems",
+        "institution": "West Virginia University Institute of Technology",
+        "year": "2023"
+      },
+      {
+        "degree": "Associate of Science in Information Technology",
+        "institution": "Southern West Virginia Community and Technical College",
+        "year": "2025 (Expected)"
+      }
+    ]
+  }
+  
