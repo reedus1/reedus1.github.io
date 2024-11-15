@@ -27,7 +27,7 @@ function load_data(){
                 section.appendChild(title);
                 //List of items from the category
                 const list = document.createElement('ul');
-                data.it_skills.forEach(item =>{
+                data.it_skills[category].forEach(item =>{
                     //Create the List Items
                     const li = document.createElement('li');
                     li.textContent = item;
