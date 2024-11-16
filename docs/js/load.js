@@ -9,8 +9,6 @@ function load_data(){
             return res.json();
         })
         .then(data =>{
-       // document.addEventListener('DOMContentLoaded', () =>
-       // {
             //Create Education List 
             const educationList = document.getElementById('education');
             data.education.forEach(edu => {
@@ -66,7 +64,6 @@ function load_data(){
                     document.getElementById('experience').appendChild(li);
                 })
             })
-        //})
     }
     catch(e)
     {
