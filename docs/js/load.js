@@ -77,11 +77,11 @@ function light_mode_toggle()
 {
     const stylesheet = document.getElementById('style-sheet-theme');
     // Check if the current stylesheet is dark mode
-    if (stylesheet.href.includes('../css/styles_light_mode.css')) {
+    if (stylesheet.href.includes('./css/styles_light_mode.css')) {
         // Switch to dark mode
-        stylesheet.href = '../css/style_dark_mode.css';
+        stylesheet.href = './css/style_dark_mode.css';
     } else {
         // Switch to light mode
-        stylesheet.href = '../css/styles_light_mode.css';
+        stylesheet.href = './css/styles_light_mode.css';
     }
 }
