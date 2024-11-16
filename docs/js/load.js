@@ -73,11 +73,10 @@ function load_data(){
     }
 }
 //Toggle to light or dark mode for the webpage
-function light_mode_toggle()
-{
+function light_mode_toggle() {
     const stylesheet = document.getElementById('style-sheet-theme');
-    // Check if the current stylesheet is dark mode
-    if (stylesheet.href.includes('./css/styles_light_mode.css')) {
+    // Check if the current stylesheet is light mode
+    if (stylesheet.href.includes('styles_light_mode.css')) {
         // Switch to dark mode
         stylesheet.href = './css/style_dark_mode.css';
     } else {
