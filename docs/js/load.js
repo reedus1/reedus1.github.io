@@ -52,7 +52,7 @@ function load_data(){
                     }
                 });
                 //Set the content of the Skills Element
-                skillsList.appendChild(item_list);
+                skillsList.textContent(item_list);
                 //Experience, From json data
                 const expList = document.getElementById('experience');
                 data.experience.forEach(exp =>{
