@@ -86,3 +86,7 @@ function light_mode_toggle() {
         stylesheet.href = './css/styles_light_mode.css?${timestamp}';
     }
 }
+function load_contact_page()
+{
+    window.location.href = "./contact.html"
+}
