@@ -75,12 +75,14 @@ function load_data(){
 //Toggle to light or dark mode for the webpage
 function light_mode_toggle() {
     const stylesheet = document.getElementById('style-sheet-theme');
+    const timestamp = new Date().getTime();  // Add timestamp to bypass cache
+
     // Check if the current stylesheet is light mode
     if (stylesheet.href.includes('styles_light_mode.css')) {
         // Switch to dark mode
-        stylesheet.href = './css/style_dark_mode.css';
+        stylesheet.href = './css/style_dark_mode.css?${timestamp}';
     } else {
         // Switch to light mode
-        stylesheet.href = './css/styles_light_mode.css';
+        stylesheet.href = './css/styles_light_mode.css?${timestamp}';
     }
 }
