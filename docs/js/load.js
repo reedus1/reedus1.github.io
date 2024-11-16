@@ -88,5 +88,5 @@ function light_mode_toggle() {
 }
 function load_contact_page()
 {
-    window.location.href = "./contact.html"
+    window.location.href = "../contact.html"
 }
