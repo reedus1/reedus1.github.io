@@ -9,6 +9,8 @@ function load_data(){
             return res.json();
         })
         .then(data =>{
+        document.addEventListener('DOMContentLoaded', () =>
+        {
             //Create Education List 
             const educationList = document.getElementById('education');
             data.education.forEach(edu => {
@@ -17,7 +19,7 @@ function load_data(){
                 educationList.appendChild(li);
             });
             // Populate the IT skills from JSON data
-            document.addEventListener('DOMContentLoaded', () =>{
+            
                 
                 const it_skillsList = document.getElementById('it_skills');
                 for(const category in data.it_skills)
@@ -40,30 +42,29 @@ function load_data(){
                     //Append the section to main container
                     it_skillsList.appendChild(section);
                 }
-            })
-            
 
-            // Populate the skills and education from JSON data
-            const skillsList = document.getElementById('skills');
-            let item_list = "";
-            //Loop through the JSON data and append them to the string list 
-            data.skills.forEach((skill,index) => {
-                item_list += (skill);
-                if (index < data.skills.length - 1){
-                    item_list += ', ' //Adds the comma to the list of items
-                }
-            });
-            //Set the content of the Skills Element
-            skillsList.appendChild(item_list);
-            //Experience, From json data
-            const expList = document.getElementById('experience');
-            data.experience.forEach(exp =>{
-                const li = document.createElement('li');
-                li.innerHTML = `
-                <strong>Job Title:</strong> ${exp.title} <br><strong>Company:</strong> 
-                ${exp.company}<br><strong>Duties:</strong><br> ${exp.duties.join('<br>')}`
-                //Append element to webpage
-                document.getElementById('experience').appendChild(li);
+                // Populate the skills and education from JSON data
+                const skillsList = document.getElementById('skills');
+                let item_list = "";
+                //Loop through the JSON data and append them to the string list 
+                data.skills.forEach((skill,index) => {
+                    item_list += (skill);
+                    if (index < data.skills.length - 1){
+                        item_list += ', ' //Adds the comma to the list of items
+                    }
+                });
+                //Set the content of the Skills Element
+                skillsList.appendChild(item_list);
+                //Experience, From json data
+                const expList = document.getElementById('experience');
+                data.experience.forEach(exp =>{
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                    <strong>Job Title:</strong> ${exp.title} <br><strong>Company:</strong> 
+                    ${exp.company}<br><strong>Duties:</strong><br> ${exp.duties.join('<br>')}`
+                    //Append element to webpage
+                    document.getElementById('experience').appendChild(li);
+                })
             })
         })
     }
