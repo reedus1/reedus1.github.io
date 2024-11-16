@@ -66,6 +66,12 @@ form {
     align-items: center;
     gap: 15px;
 }
+form h6{
+    align-items: left;
+    text-align: left;
+    margin:0%;
+    color: rgb(0, 0, 0);
+}
 #contact-me{
     text-align: center;
     font-size: 32px;
