@@ -1,26 +1,32 @@
 {
-  "skills": ["Java", "JavaScript", "Python", "HTML/CSS", "Bash", "C", "Visual C#"],
   "it_skills": {
-      "Software": [
-          "Microsoft Windows OS",
-          "Linux Distributions",
-          "Driver Installations"
-      ],
-      "Peripherals": [
-          "Printers",
-          "Scanners",
-          "Monitors"
+      "Operating Systems": [
+          "Windows", 
+          "Linux (Ubuntu,Debian, Mint, Raspbian)",
+          "Mac OS"
       ],
       "Networking": [
-          "Networking Basics",
+          "Network Cables",
           "Router Configuration",
-          "IP Addressing",
+          "IP Addressing, Subnetting, TCP/IP, DHCP",
           "DNS Setup"
       ],
       "Hardware": [
           "Computer Hardware",
           "PC Assembly",
-          "Troubleshooting"
+          "Troubleshooting",
+          "Peripherals(Printers,Scanners,Monitors)"
+      ],
+      "Programming Languages":[
+        "Python",
+        "JavaScript",
+        "Java",
+        "C",
+        "C#",
+        "Bash"
+      ],
+      "Software": [
+          "IT Ticketing Systems(Spiceworks), Microsoft Office Suite"
       ]
   },
   "education": [
@@ -41,10 +47,9 @@
           "company": "Beckley VA Hospital IT Department",
           "fromtodate": "August 15, 2021 - December 7, 2021",
           "duties": [
-              "Keep Track of Inventory",
-              "IT Ticketing System",
-              "Installed Printers, monitors, new computers",
-              "Created network drops"
+              "Managed IT inventory and supported ticketing system operations.",
+              "Installed and configured printers, monitors, and new computers.",
+              "Conducted network installations, including creating and testing network drops."
           ]
       },
       {
@@ -52,8 +57,8 @@
           "company": "WVUIT Student Worker",
           "fromtodate": "September, 2019 - May, 2020",
           "duties": [
-              "Did research into CS Projects for Dr. Munasinghe",
-              "Met weekly with Dr. Munasinghe to discuss project progress"
+              "Conducted research on computer science projects under Dr. Munasinghe.",
+              "Collaborated weekly with Dr. Munasinghe to refine project progress and deliverables."
           ]
       }
   ]

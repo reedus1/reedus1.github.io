@@ -1,4 +1,26 @@
 function load_data(){
+    const fall_back_it = `<li><strong>Operating Systems:</strong> Windows, Linux (Ubuntu,Debian, Mint, Raspbian), MacOS</li>
+        <li><strong>Networking:</strong> DNS setup, router configuration, IP Addressing, Subnetting, TCP/IP, DHCP, Network Cables</li>
+        <li><strong>Hardware:</strong> PC assembly, troubleshooting, peripherals (printers, monitors, scanners)</li>
+        <li><strong>Programming:</strong> Java, Python, Bash, HTML/CSS, C#, JavaScript</li>
+        <li><strong>Software:</strong> IT Ticketing Systems(Spiceworks), Microsoft Office Suite</li>`;
+    const fall_back_exp = `        <li>
+            <strong>Information Technology Intern (Job Shadow)</strong> — Beckley VA Hospital IT Department (January 2023 – April 2023)
+            <ul>
+                <li>Managed IT inventory and supported ticketing system operations.</li>
+                <li>Installed and configured printers, monitors, and new computers.</li>
+                <li>Conducted network installations, including creating and testing network drops.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Professor Assistant (Student Worker)</strong> — West Virginia University Institute of Technology (August 2022 – December 2022)
+            <ul>
+                <li>Conducted research on computer science projects under Dr. Munasinghe.</li>
+                <li>Collaborated weekly with Dr. Munasinghe to refine project progress and deliverables.</li>
+            </ul>
+        </li>`;
+    fallback_it_content = document.getElementById("it_skills");
+    fallback_exp_content = document.getElementById("experience");
     try{
         fetch('../json/data.json')
         .then(res => { 
@@ -9,16 +31,7 @@ function load_data(){
             return res.json();
         })
         .then(data =>{
-            //Create Education List 
-            const educationList = document.getElementById('education');
-            data.education.forEach(edu => {
-                const li = document.createElement('li');
-                li.textContent = `${edu.degree} from ${edu.institution} (${edu.year})`;
-                educationList.appendChild(li);
-            });
             // Populate the IT skills from JSON data
-            
-                
                 const it_skillsList = document.getElementById('it_skills');
                 for(const category in data.it_skills)
                 {
@@ -40,36 +53,25 @@ function load_data(){
                     //Append the section to main container
                     it_skillsList.appendChild(section);
                 }
-
-                // Populate the skills and education from JSON data
-                const skillsList = document.getElementById('skills');
-                let item_list = "";
-                //Loop through the JSON data and append them to the string list 
-                data.skills.forEach((skill,index) => {
-                    item_list += (skill);
-                    if (index < data.skills.length - 1){
-                        item_list += ', ' //Adds the comma to the list of items
-                    }
-                });
-                //Set the content of the Skills Element
-                skillsList.textContent = (item_list);
                 //Experience, From json data
                 const expList = document.getElementById('experience');
                 data.experience.forEach(exp =>{
                     const li = document.createElement('li');
                     li.innerHTML = `
                     <strong>Job Title:</strong> ${exp.title} <br><strong>Company:</strong> 
-                    ${exp.company}<br><strong>Duties:</strong><br> ${exp.duties.join('<br>')}`
+                    ${exp.company}<br><strong>Duties:</strong><br>${exp.fromtodate}<br>${exp.duties.join('<br>')}`
                     //Append element to webpage
                     document.getElementById('experience').appendChild(li);
                 })
             })
+            .catch(e =>{//Content json fails to load, do this
+                fallback_it_content.innerHTML = fall_back_it
+                fallback_exp_content.innerHTML = fall_back_exp
+            })
     }
     catch(e)
     {
-        console.log(e)
-        const container = document.getElementById('resume-container');
-        container.innerHTML = '<p>Sorry, we are unable to load the resume at this time. Please <a href="resume.pdf" target="_blank">click here</a> to view the PDF version.</p>';
+
     }
 }
 //Toggle to light or dark mode for the webpage
