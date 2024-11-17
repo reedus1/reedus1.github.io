@@ -1,29 +1,16 @@
 {
   "it_skills": {
       "Operating Systems": [
-          "Windows", 
-          "Linux (Ubuntu,Debian, Mint, Raspbian)",
-          "Mac OS"
+          "Windows,Linux (Ubuntu,Debian, Mint, Raspbian), MacOS"
       ],
       "Networking": [
-          "Network Cables",
-          "Router Configuration",
-          "IP Addressing, Subnetting, TCP/IP, DHCP",
-          "DNS Setup"
+          "IP Addressing, Subnetting, TCP/IP, DHCP,Router Configuration Network Cables,DNS Setup"
       ],
       "Hardware": [
-          "Computer Hardware",
-          "PC Assembly",
-          "Troubleshooting",
-          "Peripherals(Printers,Scanners,Monitors)"
+          "PC Assembly, Troubleshooting,Peripherals(Printers,Scanners,Monitors)"
       ],
       "Programming Languages":[
-        "Python",
-        "JavaScript",
-        "Java",
-        "C",
-        "C#",
-        "Bash"
+        "Python,JavaScript,Java,C,C#,Bash"
       ],
       "Software": [
           "IT Ticketing Systems(Spiceworks), Microsoft Office Suite"

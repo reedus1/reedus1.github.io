@@ -59,7 +59,7 @@ function load_data(){
                     const li = document.createElement('li');
                     li.innerHTML = `
                     <strong>Job Title:</strong> ${exp.title} <br><strong>Company:</strong> 
-                    ${exp.company}<br><strong>Duties:</strong><br>${exp.fromtodate}<br>${exp.duties.join('<br>')}`
+                    ${exp.company}<br>Dates:</strong>${exp.fromtodate}<br><strong>Duties:</strong><br><strong>${exp.duties.join('<br>')}`
                     //Append element to webpage
                     document.getElementById('experience').appendChild(li);
                 })
