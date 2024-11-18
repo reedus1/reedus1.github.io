@@ -56,7 +56,7 @@ function load_data(){
                 li.innerHTML = `
                 <strong>Job Title:</strong> ${exp.title} <br><strong>Company:</strong> 
                 ${exp.company}<br> <strong>Dates:</strong>${exp.fromtodate}<br><strong>Tasks:</strong><br>`;
-                data.experience.forEach(task =>{
+                data.experience.duties.forEach(task =>{
                     li_tasks.innerHTML = `<li>${exp.duties.join('<br>')}</li>`
                 })
                 //Append element to webpage
