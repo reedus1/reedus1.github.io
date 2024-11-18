@@ -3,15 +3,15 @@ function load_data(){
             <strong>Information Technology Intern (Job Shadow)</strong> — Beckley VA Hospital IT Department (January 2023 – April 2023)
             <ul>
                 <li>Managed IT inventory and supported ticketing system operations.</li>
-                <li>Installed and configured printers, monitors, and new computers.</li>
-                <li>Conducted network installations, including creating and testing network drops.</li>
+              <li>Installed and configured critical hardware, including printers, monitors, and new computers, to enhance operational efficiency and user experience.</li>
+              <li>Executed comprehensive network installations, including the creation and testing of network drops, ensuring robust and reliable connectivity.</li>
             </ul>
         </li>
         <li>
             <strong>Professor Assistant (Student Worker)</strong> — West Virginia University Institute of Technology (August 2022 – December 2022)
             <ul>
-                <li>Conducted research on computer science projects under Dr. Munasinghe.</li>
-                <li>Collaborated weekly with Dr. Munasinghe to refine project progress and deliverables.</li>
+                <li>Conducted in-depth research on computer science projects under the guidance of Dr. Munasinghe, focusing on innovative problem-solving and practical applications.</li>
+              <li>Collaborated closely with Dr. Munasinghe in weekly sessions to refine project goals, enhance methodologies, and ensure the timely delivery of high-quality outcomes.</li>
             </ul>
         </li>`;
     fallback_exp_content = document.getElementById("experience");

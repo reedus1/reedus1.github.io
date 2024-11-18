@@ -95,19 +95,18 @@ input, textarea {
 
 button{
     width: 100%;
-    max-width: 400px; /* Same width as inputs */
+    height: 100%;
+    max-width: 200px; 
     padding: 10px;
-    font-size: 16px;
+    margin-bottom: 5px;
+    font-size: 18px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 button:hover {
     background-color: #45a049;
 }
-
-
-/* Add more styles as needed */
