@@ -56,7 +56,9 @@ function load_data(){
                 li.innerHTML = `
                 <strong>Job Title:</strong> ${exp.title} <br><strong>Company:</strong> 
                 ${exp.company}<br> <strong>Dates:</strong>${exp.fromtodate}<br><strong>Tasks:</strong><br>`;
-                li_tasks.innerHTML = `<li>${exp.duties.join('<br>')}</li>`
+                data.experience.forEach(task =>{
+                    li_tasks.innerHTML = `<li>${exp.duties.join('<br>')}</li>`
+                })
                 //Append element to webpage
                 document.getElementById('experience').appendChild(li);
                 document.getElementById('tasks').appendChild(li_tasks);
