@@ -49,13 +49,17 @@ function load_data(){
                 */
             //Experience, From json data
             const expList = document.getElementById('experience');
+            const task_list = document.getElementById('tasks');
             data.experience.forEach(exp =>{
                 const li = document.createElement('li');
+                const li_tasks = document.createElement('li');
                 li.innerHTML = `
                 <strong>Job Title:</strong> ${exp.title} <br><strong>Company:</strong> 
-                ${exp.company}<br>Dates:</strong>${exp.fromtodate}<br><strong>Tasks:</strong><br><ul><li><strong>${exp.duties.join('<br>')}</ul></li>`
+                ${exp.company}<br> <strong>Dates:</strong>${exp.fromtodate}<br><strong>Tasks:</strong><br>`;
+                li_tasks.innerHTML = `<li>${exp.duties.join('<br>')}</li>`
                 //Append element to webpage
                 document.getElementById('experience').appendChild(li);
+                document.getElementById('tasks').appendChild(li_tasks);
             })
         })
         .catch(e =>{//Content json fails to load, do this
