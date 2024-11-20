@@ -10,14 +10,15 @@
 <body onload="load_data()">
         <div class="container">
             <div class="header">
-                <h1><img style="border-radius:50%"alt="An image of me"src="me.jpg"width="150"height="150">Daniel Reed Vance</h1>
+                <h1><img style="border-radius:50%"alt="An image of me"src="./imgs/me.jpg"width="150"height="150">Daniel Reed Vance</h1>
                 <hr>
                 <!--Email Information-->
                 <p>&#100;&#97;&#110;&#105;&#101;&#108;&lowbar;&#118;&#97;&#110;&#99;&#101;&lowbar;&commat;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&period;&#99;&#111;&#109; 
                 | 📍 Harts WV, 25524<br></p>
                 <hr>
-                <button onclick="load_contact_page()">📩Contact Me</button>
-                <button onclick="light_mode_toggle()">🔘Toggle Dark Mode</button>                 
+                <button onclick="load_page_new(`./contact.html`)">📩Contact Me</button>
+                <button onclick="light_mode_toggle()">🔘Toggle Dark Mode</button>
+                <button onclick="load_page(`./certs.html`)">🧾Certifications</button>                 
                 <hr>
             </div>
             <div class="section">
