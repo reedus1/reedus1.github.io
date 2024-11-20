@@ -24,6 +24,29 @@ function load_data(){
         return res.json();
     })
     .then(data =>{
+        // Populate the IT skills from JSON data
+            /*const it_skillsList = document.getElementById('it_skills');
+            for(const category in data.it_skills)
+            {
+                const section = document.createElement('section');
+                //Category title
+                const title = document.createElement('h3');
+                title.textContent = category;
+                section.appendChild(title);
+                //List of items from the category
+                const list = document.createElement('ul');
+                data.it_skills[category].forEach(item =>{
+                    //Create the List Items
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    list.appendChild(li);
+                })
+                //Append the list
+                section.appendChild(list);
+                //Append the section to main container
+                it_skillsList.appendChild(section);
+            }
+                */
             //Experience, From json data
             const expList = document.getElementById('experience');
             const task_list = document.getElementById('tasks');
@@ -46,12 +69,28 @@ function load_data(){
         })
 }
 //Toggle to light or dark mode for the webpage
-// Get the <link> tag for the stylesheet
-const stylesheet = document.querySelector('style-sheet-theme');
-
-// Apply saved mode on page load
+function load_light()
+{
+    const stylesheet = document.getElementById('style-sheet-theme');
+    const savedMode = localStorage.getItem('light_mode');
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedMode = localStorage.getItem('light_mode');
+    
+        if (savedMode === '0') {
+            // Apply dark mode
+            stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
+        } else {
+            // Apply light mode (default)
+            stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
+        }
+    });
+}
+function light_mode_toggle() {
+    const stylesheet = document.getElementById('style-sheet-theme');
+// Check and apply the saved mode on page load
 document.addEventListener('DOMContentLoaded', () => {
     const savedMode = localStorage.getItem('light_mode');
+
     if (savedMode === '0') {
         // Apply dark mode
         stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
@@ -60,10 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
         stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
     }
 });
-
-// Function to toggle between light and dark mode
-function light_mode_toggle() {
     const currentMode = localStorage.getItem('light_mode');
+
     if (currentMode === '0') {
         // Switch to light mode
         stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
