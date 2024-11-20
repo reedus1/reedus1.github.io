@@ -1,15 +1,3 @@
-    // Check and apply the saved mode on page load
-    document.addEventListener('DOMContentLoaded', () => {
-        const savedMode = localStorage.getItem('light_mode');
-
-        if (savedMode === '0') {
-            // Apply dark mode
-            stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
-        } else {
-            // Apply light mode (default)
-            stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
-        }
-    });
 function load_data(){
     const fall_back_exp = `<li>
             <strong>Information Technology Intern (Job Shadow)</strong> — Beckley VA Hospital IT Department (January 2023 – April 2023)
@@ -58,11 +46,24 @@ function load_data(){
         })
 }
 //Toggle to light or dark mode for the webpage
+// Get the <link> tag for the stylesheet
+const stylesheet = document.querySelector('style-sheet-theme');
+
+// Apply saved mode on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedMode = localStorage.getItem('light_mode');
+    if (savedMode === '0') {
+        // Apply dark mode
+        stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
+    } else {
+        // Apply light mode (default)
+        stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
+    }
+});
+
+// Function to toggle between light and dark mode
 function light_mode_toggle() {
-    const stylesheet = document.getElementById('style-sheet-theme');
-
     const currentMode = localStorage.getItem('light_mode');
-
     if (currentMode === '0') {
         // Switch to light mode
         stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
