@@ -71,9 +71,8 @@ function load_data(){
 //Toggle to light or dark mode for the webpage
 function load_light()
 {
-    const stylesheet = document.getElementById('style-sheet-theme');
-    const savedMode = localStorage.getItem('light_mode');
     document.addEventListener('DOMContentLoaded', () => {
+        const stylesheet = document.getElementById('style-sheet-theme');
         const savedMode = localStorage.getItem('light_mode');
     
         if (savedMode === '0') {
