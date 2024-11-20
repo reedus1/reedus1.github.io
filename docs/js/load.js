@@ -68,53 +68,44 @@ function load_data(){
             fallback_exp_content.innerHTML = fall_back_exp
         })
 }
-//Toggle to light or dark mode for the webpage
-function load_light()
-{
-    document.addEventListener('DOMContentLoaded', () => {
-        const stylesheet = document.getElementById('style-sheet-theme');
-        const savedMode = localStorage.getItem('light_mode');
-    
-        if (savedMode === '0') {
-            // Apply dark mode
-            stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
-        } else {
-            // Apply light mode (default)
-            stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
-        }
-    });
-}
-function light_mode_toggle() {
-    const stylesheet = document.getElementById('style-sheet-theme');
-// Check and apply the saved mode on page load
+//Loads the Light Mode for the webpage
 document.addEventListener('DOMContentLoaded', () => {
-    const savedMode = localStorage.getItem('light_mode');
-
-    if (savedMode === '0') {
-        // Apply dark mode
-        stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
-    } else {
-        // Apply light mode (default)
-        stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
+    // Function to apply the selected mode
+    function applyMode(mode) {
+        const stylesheet = document.getElementById('style-sheet-theme');
+        if (mode === '0') {
+            stylesheet.href = './css/style_dark_mode.css';
+            localStorage.setItem('light_mode', '0');
+        } else {
+            stylesheet.href = './css/styles_light_mode.css';
+            localStorage.setItem('light_mode', '1');
+        }
     }
+
+    // Initialize the mode based on localStorage
+    function initializeMode() {
+        const savedMode = localStorage.getItem('light_mode') || '1'; // Default to light mode
+        applyMode(savedMode);
+    }
+
+    // Toggle the mode when the button is clicked
+    function toggleMode() {
+        const currentMode = localStorage.getItem('light_mode');
+        const newMode = currentMode === '0' ? '1' : '0'; // Toggle between modes
+        applyMode(newMode);
+    }
+
+    // Check if the button exists
+    const toggleButton = document.getElementById('toggle-button');
+    if (toggleButton) {
+        toggleButton.addEventListener('click', toggleMode);
+    } else {
+        console.error('Toggle button not found in the DOM.');
+    }
+
+    // Initialize the mode on page load
+    initializeMode();
 });
-    const currentMode = localStorage.getItem('light_mode');
-
-    if (currentMode === '0') {
-        // Switch to light mode
-        stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
-        localStorage.setItem('light_mode', '1');
-    } else {
-        // Switch to dark mode
-        stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
-        localStorage.setItem('light_mode', '0');
-    }
-}
-
-// Load a default style on page load
-window.onload = function () {
-    light_mode_toggle();
-};
 
 //Loads a page in a new window
 function load_page_new(src)

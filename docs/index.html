@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Vance's Resume</title>
-    <link onload="load_light()" id="style-sheet-theme" rel="stylesheet" href="./css/styles_light_mode.css">
+    <link id="style-sheet-theme" rel="stylesheet" href="./css/styles_light_mode.css">
     <script src="./js/load.js"></script>
 </head>
 <body onload="load_data()">
@@ -17,7 +17,7 @@
                 | 📍 Harts WV, 25524<br></p>
                 <hr>
                 <button onclick="load_page_new(`./contact.html`)">📩Contact Me</button>
-                <button onclick="light_mode_toggle()">🔘Toggle Dark Mode</button>
+                <button id="toggle-button">🔘Toggle Dark Mode</button>
                 <button onclick="load_page(`./certs.html`)">🧾Certifications</button>                 
                 <hr>
             </div>
