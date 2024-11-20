@@ -10,20 +10,29 @@
     <body onload="disable_context()">
         <div class="container">
             <div class="section">
-                <hr>
-                    <button onclick="load_page(`./index.html`)">🏠Home</button>
-                    <button id="toggle-button">🔘Toggle Dark Mode</button>                 
+                <div class="header">
+                    <h1><img style="border-radius:50%"alt="An image of me"src="./imgs/me.jpg"width="150"height="150">Daniel Reed Vance</h1>
                     <hr>
-                <h2>Udemy Courses Completed</h2>
-                <section id="image-container">
-                    <img alt="Image of my Udemy CompTIA Core 1 completion" 
-                    src="./imgs/Cert_A+_UdemyC1.jpg" width="500" height="400">
-                </section>
+                    <!--Email Information-->
+                    <p>&#100;&#97;&#110;&#105;&#101;&#108;&lowbar;&#118;&#97;&#110;&#99;&#101;&lowbar;&commat;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&period;&#99;&#111;&#109; 
+                    | 📍 Harts WV, 25524<br></p>
+                    <hr>
+                    <button onclick="load_page(`./index.html`)">🏠Home</button> 
+                    <button onclick="load_page_new(`./contact.html`)">📩Contact Me</button>
+                    <button id="toggle-button">🔘Toggle Dark Mode</button>
+                    <hr>
+                </div>
             </div>
             <div class="section">
+                    <h2>Udemy Courses Completed</h2>
+                    <section id="image-container">
+                        <img alt="Image of my Udemy CompTIA Core 1 completion" 
+                        src="./imgs/Cert_A+_UdemyC1.jpg" width="500" height="400">
+                    </section>
                 <h2>CompTIA</h2>
                 <section id="image-container">
-                    <p>Working towards taking the CompTIA A+ Exam</p>
+                    <p>Working towards obtaining my CompTIA A+ Certification</p>
+                    <p>Working towards obtaining my CompTIA Network+ Certification</p>
                     <!--<img src="./imgs/Cert_A+_UdemyC1.jpg" width="400" height="300">-->
                 </section>
             </div>
