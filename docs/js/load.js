@@ -1,5 +1,3 @@
-function load_data(){
-        
     // Check and apply the saved mode on page load
     document.addEventListener('DOMContentLoaded', () => {
         const savedMode = localStorage.getItem('light_mode');
@@ -12,6 +10,7 @@ function load_data(){
             stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
         }
     });
+function load_data(){
     const fall_back_exp = `<li>
             <strong>Information Technology Intern (Job Shadow)</strong> — Beckley VA Hospital IT Department (January 2023 – April 2023)
             <ol style="list-style:disc;">
