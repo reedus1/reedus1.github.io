@@ -110,6 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('light_mode', '0');
     }
 }
+
+// Load a default style on page load
+window.onload = function () {
+    light_mode_toggle();
+};
+
 //Loads a page in a new window
 function load_page_new(src)
 {
