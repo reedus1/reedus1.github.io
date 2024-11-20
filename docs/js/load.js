@@ -114,7 +114,7 @@ function load_page_new(src)
 //Loads a page
 function load_page(src)
 {
-    window.open(src);
+    window.location(src);
 }
 function disable_context()
 {
