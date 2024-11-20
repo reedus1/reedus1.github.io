@@ -71,40 +71,30 @@ function load_data(){
 //Toggle to light or dark mode for the webpage
 function light_mode_toggle() {
     const stylesheet = document.getElementById('style-sheet-theme');
-    const timestamp = new Date().getTime();  // Add timestamp to bypass cache
+    
+    // Check and apply the saved mode on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedMode = localStorage.getItem('light_mode');
 
-    //Load Some Json to read what the user has saved as their prefered light mode
-    fetch('../json/mode.json')
-    .then(res => { 
-        if(!res.ok)
-        {
-            throw new Error('Failed to load JSON');
-        }
-        return res.json();
-    }).then(data => {
-        //Read the Value of JSON light mode
-        // Check if the current stylesheet is light mode
-        
-        if (data.light_mode == 0) {
-            // Switch to dark mode
-            stylesheet.href = './css/style_dark_mode.css?${timestamp}';
-            data.light_mode = 1
-        } else if (data.light_mode == 1){
-            // Switch to light mode
-            stylesheet.href = './css/styles_light_mode.css?${timestamp}';
-            data.light_mode = 0
-        }
-    }).catch(e =>{ //If it fails to load the Json then just select a light mode
-        // Check if the current stylesheet is light mode
-        if (stylesheet.href.includes('styles_light_mode.css')) {
-            // Switch to dark mode
-            stylesheet.href = './css/style_dark_mode.css?${timestamp}';
+        if (savedMode === '0') {
+            // Apply dark mode
+            stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
         } else {
-            // Switch to light mode
-            stylesheet.href = './css/styles_light_mode.css?${timestamp}';
+            // Apply light mode (default)
+            stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
         }
-    })
+    });
+    const currentMode = localStorage.getItem('light_mode');
 
+    if (currentMode === '0') {
+        // Switch to light mode
+        stylesheet.href = `./css/styles_light_mode.css?${Date.now()}`;
+        localStorage.setItem('light_mode', '1');
+    } else {
+        // Switch to dark mode
+        stylesheet.href = `./css/style_dark_mode.css?${Date.now()}`;
+        localStorage.setItem('light_mode', '0');
+    }
 }
 //Loads a page in a new window
 function load_page_new(src)
