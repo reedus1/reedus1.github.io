@@ -1,0 +1,49 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(202, 193, 164);
+}
+h1{
+    text-align: left;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(44, 97, 145);
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: large;
+    padding: 15px;
+    color: white;
+    display: block;
+    text-align: center;
+}
+.navbar li{
+    float: left;
+}
+.navbar a:hover{
+    background-color: rgb(27, 50, 70);
+}
+.main{
+    padding: 10px;
+}
+
+.contact-form-container{
+    background-color: rgb(241, 235, 213);
+    text-align: left;
+    padding: 10px;
+}
+.contact-form-container .contact-me{
+    font-size: 32px;
+    margin: 0%;
+}
+.contact-form-container textarea{
+    resize: none;
+    width: 50%;
+    height:  60px;
+    font-size: 18px;
+}
+

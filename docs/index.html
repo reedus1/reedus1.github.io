@@ -1,109 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Vance's Resume</title>
-    <link id="style-sheet-theme" rel="stylesheet" href="./css/styles_light_mode.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon.ico">
-    <script src="./js/load.js"></script>
-</head>
-<body onload="load_data()">
-        <div class="container">
-            <div class="header">
-                <h1><img style="border-radius:50%"alt="An image of me"src="./imgs/me.jpg"width="150"height="150">Daniel Reed Vance</h1>
-                <hr>
-                <!--Email Information-->
-                <p>&#100;&#97;&#110;&#105;&#101;&#108;&lowbar;&#118;&#97;&#110;&#99;&#101;&lowbar;&commat;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&period;&#99;&#111;&#109; 
-                | 📍 Harts WV, 25524<br></p>
-                <hr>
-                <button onclick="load_page(`./certs.html`)">🧾Certifications</button>
-                <button onclick="load_page_new(`./contact.html`)">📩Contact Me</button>
-                <button id="toggle-button">🔘Toggle Dark Mode</button>                 
-                <hr>
-            </div>
-            <div class="section">
-                <h2>Summary</h2>
-                <p> Recent graduate with a <strong>B.S. in Information Systems</strong> from <strong><a href="https://www.wvutech.edu/" target="_blank">West Virginia University Institute of Technology</a></strong>
-                    and <strong>current part time student in Information Technology at <a href="https://www.southernwv.edu/" target="_blank">Southern West Virginia Community and Technical College</a></strong>.
-                    Passionate about solving technical challenges, and eager to apply hands-on and remote support skills in a 
-                    dynamic IT environment. <strong>Enthusiastic about building a career in IT and ready to contribute to a collaborative team.</strong>
-                </p>
-            </div>
-            <!--This is where the resume should be placed for viewing if the JSON or anything else fails to load-->
-            <div class="section">
-                <p id="resume-container"></p>
-            </div>
-            <div class="section">
-                <h2>Education</h2>
-                    <ul>
-                        <li><strong><mark>Bachelor of Science in Information Systems</mark></strong> <br> 
-                            <i><u>West Virginia University Institute of Technology</u></i> (August 2018 - May 2023)<br>
-                        Minor in Cybersecurity</li>
-                        <li><strong><mark>Associate of Science in Information Technology</mark></strong> <br> 
-                            <i><u>Southern West Virginia Community and Technical College</u></i> (August 2024 - Expected 2025)</li>
-                    </ul>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daniel Vance's Website</title>
+        <link id="style-sheet-theme" rel="stylesheet" href="./css/test.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon.ico">
+        <script src="./js/load.js"></script>
+    <body>
+        <div class="nav-bar">
+                <div class="nav nav-1"><button onclick="load_page('index.html')">🏠Home</button></div>
+                <div class="nav nav-1"><button onclick="load_page('contact.html')">📩ContactMe</button></div>
+                <div class="nav nav-1"><button>Projects</button></div>
+        </div>
+        <div class="name_contact">
+            <div class="title_with_sub"> 
+                <h1>Daniel Reed Vance</h1> 
+                <h4>Email: daniel_vance_@outlook.com</h4>
+                <h4>Student, programmer, and tech enthusiast</h4></div>
+                <img src="./imgs/me.jpg" alt="A Picture of Me">
+        </div>
 
-            <div class="section">
-                <h2>Technical Skills</h2>
-                <ul style="list-style: none;">
-                    <li><strong>Operating Systems</strong> <br><span style="padding-left: 20px;">
-                        Windows, Linux (Ubuntu, Raspbian)</span></li>
-                    <li><strong>Networking</strong> <br><span style="padding-left: 20px;">
-                        DNS setup, router configuration, IP addressing</span></li>
-                    <li><strong>Hardware</strong> <br><span style="padding-left: 20px;">
-                        PC assembly, troubleshooting, peripherals (printers, monitors, scanners)</span></li>
-                    <li><strong>Programming</strong> <br><span style="padding-left: 20px;">
-                        Java, Python, Bash, HTML/CSS, C#, JavaScript</span></li>
-                    <li><strong>Software</strong> <br><span style="padding-left: 20px;">
-                        IT ticketing systems, Microsoft Office Suite</span></li>
-                </ul>
+        <div class="title"><h1>About Me</h1></div>
+        <div class="Information">
+            <div class="container">
+                <div class="center-text">
+                    <p> Hello my name is Daniel Vance! Welcome to my Portfolio website! <br>
+                        There isn't much to see here but what is here strongly pertains to technology.<br>
+                        I hope that you find something of interest here and If you'd like to learn more, feel free to <a href="/contact.html">contact me</a>.<br>
+                        </p>
+                    <p>
+                        Currently I am working on completing my Associates in Information Technology, I have a Bachelors in Information Systems.<br>
+                        During my studies working towards the end of my Bachelors degree, I really wanted to go into technology.<br>
+                        While my Bachelors did not focus on learning computer hardware or network configuration and installation etc. it did prepare me for software development.<br>
+                        And I do like developming software but what I really like is technology.
+                    </p>
+                    <p>
+                        During my time after graduation I discovered that many of the jobs that I wanted to do required a further understanding of information technology.<br>
+                        So I took it upon myself to make the decision of getting my Associates in IT to prepare me just for that.<br>
+                        To further supplment my Associates, I'm working towards completing some nationally recongnized IT Certification's like CompTIA.
+                    </p>
+                </div>
             </div>
-            <div class="section">
-                <!--This is Quite ugly to use to lists to show this information, but I am rushing and It looks okay.-->
-                <h2>Professional Development</h2>
-                <p><strong>CompTIA A+ Certification (In Progress)</strong></p>
-                <ol style="list-style: none;">
+        </div>
+
+        <div class="title"><h1>Education</h1></div>
+        <div class="Information">
+            <!--This can be a section highlighting your Schooling, Contact Info., etc-->
+            <div class="container">
+                <div class="title">College(s)</div>
+                <ol>
                     <li>
-                    Platform: <a href="https://comptia.org">CompTIA</a><br>
-                    Topics Covered: Computer hardware, networking, security, troubleshooting, and IT fundamentals.<br>
-                    Expected Completion Date: 5/7/25<br>
-                    Supplementary: CompTIA A+ Udemy course with <a href="https://www.udemy.com/user/mike-meyers/">Mike Meyers</a></li>
-                </ol>
-                <p><strong>CompTIA Network+ Certification (In Progress)</strong></p>
-                <ol style="list-style: none;">
+                        <a href="https://www.wvutech.edu/">West Virginia University Institute of Technology</a>
+                        <ul><li>Bachelors of Science in Information Systems </li> <li>Minor in Cybersecurity<br> Aug 2018 - May 2023</li></ul>
+                    </li>
                     <li>
-                        Platform: <a href="https://comptia.org">CompTIA</a><br>
-                        Topics Covered: Networking fundamentals, routing and switching, wireless standards, network security, cloud networking, and troubleshooting methodologies.<br>
-                        Expected Completion Date: 5/7/25<br>
+                        <a href="https://www.southernwv.edu/">Southern West Virginia Community and Technical College</a>
+                        <ul><li>Associates in Information Technology <br> Aug 2024 - May 2025</li></ul>
                     </li>
                 </ol>
-
             </div>
-            <div class="section">
-                <h2>Experience</h2>
-                <ul id="experience">
-                    <!--Insert Java Script here to generate work experience section-->
-                    <ol id="tasks">
-                        <!--<li>This is for testing</li>-->
-                    </ol>
+            <div class="container">
+                <div class="title">Certifications</div>
+                <ul>
+                    <div class="InProgressList">
+                        <li> In Progress Certifications</li>
+                            <ol>
+                                <li>CompTIA A+</li>
+                                <li>CompTIA Network+</li>
+                                <li>CompTIA Security+</li>
+                            </ol>
+                    </div>
+                    <div class="CompletedList">
+                        <li>Earned Certifications</li>
+                            <ol>
+                                <li>TestOut: Competency in Technology Fundamentals<br>November, 2024 <img src="./imgs/certs/testout_cit.png" alt="TestOut Certification">
+                            </ol>
+                    </div>
                 </ul>
             </div>
-            <div class="section">
-                <h2>Projects</h2>
-                <h3>PI-Hole Network Ad Blocking System</h3>
-                <p><strong>Description:</strong> Implemented a network wide ad-blocking and DNS filtering solution using Pi-hole on a Raspberry Pi to my home network.</p>
-                <p><strong>Technology used:</strong><br>Raspberry Pi 4b, Linux(Ubuntu Server),Pi-hole,Network Manager</p>
-                <p><strong>Key Contributions</strong></p>
-                <ol>
-                    <li><strong>Configured</strong> and deployed Pi-hole to filter ads and malicious domains for all devices on the network.</li>
-                    <li><strong>Optimized</strong> performance by fine-tuning blocklists and DNS settings for efficient ad-blocking without affecting browsing speed.</li>
-                    <li><strong>Enhanced network security</strong> by identifying and blocking trackers and unwanted traffic.</li>
-                    <li><strong>Integrated Pi-hole</strong> with existing home network infrastructure, including dynamic IP configuration and custom DNS settings.</li>
-                </ol>
-                <p><strong>Outcome:</strong> Reduced data usage, improved network performance and security.</p>
+        </div>
+        <div class="title"><h1>Udemy Educational Sources</h1></div>
+        
+        <div class="Information">
+            <div class="container">
+                <ul>
+                    <li class="udemy-images">CompTIA A+ (220-1101) and (220-1102) <br>with Steve Nicholson and Mike Meyers 
+                        <img alt="Udemy Course CompTIA A+ Core1 with Mike Meyers" src="./imgs/certs/Cert_A+_UdemyC1.jpg">
+                        <img alt="Udemy Course CompTIA A+ Core2 with Mike Meyers" src="./imgs/certs/Cert_A+_UdemyC2.jpg">
+                        
+                    </li>
+                    <!-- This was a test to see how the rest of the Udemy Courses I plan on Adding will look
+                    <li class="udemy-images">CompTIA A+ (220-1101) and (220-1102) <br>with Steve Nicholson and Mike Meyers 
+                        <img style="width:600px;" src="./imgs/Cert_A+_UdemyC1.jpg">
+                        <img style="width:600px;" src="./imgs/Cert_A+_UdemyC1.jpg">
+                    </li>
+                    -->
+                </ul>
             </div>
         </div>
     </body>
+
+    <footer>
+        <p>&copy; 2024 Daniel Vance. All rights reserved.</p>
+    </footer>
 </html>

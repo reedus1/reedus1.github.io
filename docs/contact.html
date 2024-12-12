@@ -4,20 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Me</title>
-        <link rel="stylesheet" href="./css/styles_light_mode.css">
+        <link rel="stylesheet" href="./css/test.css">
         <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon.ico">
+        <script src="./js/load.js"></script>
+
     </head>
     <body>
-        <div id="contact-form-container">
-            <form action="https://formspree.io/f/xrbgkwbq" method="POST">
-                <p id="contact-me">Contact Me</p>
-                <input type="email" name="email" placeholder="Enter Your Email" required><br>
-                <textarea placeholder="Enter Your Message" name="message" required></textarea><br>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-                <h6>Powered by <a target="_blank" href="https://formspree.io">FormSpree</a></h6>
-                <h6>Messages sent via FormSpree are emailed directly to my business email.</h6>
-            </form>
+        <div class="nav-bar">
+            <div class="nav nav-1"><button onclick="load_page('index.html')">🏠Home</button></div>
+            <div class="nav nav-1"><button onclick="load_page('contact.html')">📩ContactMe</button></div>
+            <div class="nav nav-1"><button>Projects</button></div>
+         </div>
+
+        <div class="title"><h1>Contact Information and Easy Email</h1></div>
+        
+        <div class="Information">
+            <div class="container" style="background-image: radial-gradient(rgb(46, 122, 189),rgb(202, 193, 164));">
+                <div class="email-form">
+                    <label>Email: daniel_vance_@outlook.com<br><hr></label>
+                    <label>For ease of communication you can always choose to email me directly from this webpage.<br>Just enter your email, your message, and I'll get back to you.</label>
+                    <hr>
+                    <form action="https://formspree.io/f/xrbgkwbq" method="POST">
+                        <div class="form-items"></div>
+                            <input type="email" name="email" placeholder="Enter Your Email" required><br>
+                            <textarea maxlength="200" placeholder="Enter Your Message. Max Characters 200" name="message" required></textarea><br>
+                            <!-- your other form fields go here -->
+                            <button type="submit">Send</button>
+                            <h6>Powered by <a target="_blank" href="https://formspree.io">FormSpree</a>
+                                <br>Messages sent via FormSpree are emailed directly to my business email.</h6>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
+    <footer>
+        <p>&copy; 2024 Daniel Vance. All rights reserved.</p>
+      </footer>
 </html>
