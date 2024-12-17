@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Me</title>
+        <title>Projects</title>
         <link rel="stylesheet" href="./css/test.css">
         <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon.ico">
         <script src="./js/load.js"></script>
@@ -13,10 +13,48 @@
         <div class="nav-bar">
             <div class="nav nav-1"><button onclick="load_page('index.html')">🏠Home</button></div>
             <div class="nav nav-1"><button onclick="load_page('contact.html')">📩ContactMe</button></div>
-            <div class="nav nav-1"><button>Projects</button></div>
+            <div class="nav nav-1"><button onclick="load_page('projects.html')">Projects</button></div>
         </div>
-
-        <div class="title"><h1>Raspberry PI DNS Server and AdBlocker</h1></div>
+        <div class="title"><h1 style="margin-top: 10px; margin-bottom:5px;">Projects</h1></div>
+        <div class="title"><img src="./imgs/imgs_proj/pi-hole-logo.png" style="background-color:white;border-radius:15px; width: 90px;margin:20px;padding:2px"><h1>Raspberry PI DNS Server and AdBlocker</h1></div>
+        <div class="Information">
+            <div class="container">
+                <div class="title"><h3>What is Pi Hole?</h3></div>
+                <p class="bubble" style="width:fit-content; text-align:center;">
+                    Pi-hole, Created by Jacob Salmela in 2014, is a network-wide ad blocker that acts as a DNS-based sinkhole. 
+                    It prevents ads, trackers, and malicious domains from loading across all devices connected to a network. Pi-hole does this by comparing DNS queries against a blacklist 
+                    of known ad and tracking domains. If a requested domain matches an entry in the blacklist, Pi-hole responds with a null IP address (e.g., 0.0.0.0 or 127.0.0.1), effectively 
+                    blocking the domain.
+                </p>
+                <div class="title"><h3>What I learned From this Project</h3></div>
+                <div class="bubble-list">
+                    <div class="bubble">
+                        <p>
+                            During this project, I learned a lot about using Ubuntu Server on my Raspberry Pi (RPI for short). I set up a DNS server on my RPI and then figured out how to communicate with it from my other devices. 
+                            The process was straightforward: I configured my router to use the RPI as the primary DNS server instead of the default ISP-provided DNS.
+                        </p>
+                    </div>
+                    <div class="bubble">
+                        <p>
+                            To ensure uninterrupted DNS resolution, it’s important to set a fallback DNS server in case the RPI is unreachable or cannot resolve a query. 
+                            Options like Google's DNS (8.8.8.8) or Cloudflare's DNS (1.1.1.1) work great as reliable backups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Python Game Project-->
+        <div class="title"> <img src="./imgs/imgs_proj/python.png" style="width: 80px; border-radius:15px; margin:15px"> <h1>Python Programming</h1></div>
+        <div class="Information">
+            <div class="container">
+                <div class="title"><h3>What is PyGame</h3></div>
+                <div class="bubble-list">
+                    <div class="bubble">
+                        <p>WIP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     <footer>
         <p>&copy; 2024 Daniel Vance. All rights reserved.</p>
