@@ -193,13 +193,10 @@ ul li{
     justify-content: space-evenly;
 }
 .bubble {
-    display: flex;
-    justify-content: top; /* Centers text horizontally */
-    align-items: top; /* Centers text vertically */
+    display: inline;
     text-align: center;
 
     background-image: radial-gradient(rgb(46, 122, 189),rgb(202, 193, 164));
-    margin:10px;
     padding: 2px;
 
     width: 40%;
