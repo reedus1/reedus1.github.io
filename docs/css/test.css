@@ -118,7 +118,7 @@
 
 /*Styles Images inside of a conatiner item*/
 .container img{
-    max-width: 50px;
+    max-width: 120px;
     height: auto;
     border-radius: 15px;
     border-style:solid;
@@ -137,7 +137,7 @@
     list-style: decimal;
 }
 .CompletedList ol li img{
-    max-width: 180px; /* Adjust size as needed */
+    max-width: 180px; 
     height: auto;
 }
 /*Styles no order lists*/
@@ -150,10 +150,6 @@ ul li{
     list-style: none;
 }
 
-/*Used to center text in a block*/
-.center-text{
-    text-align: center;
-}
 /*Styles Containers outside of the Information Section*/
 .container{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -168,16 +164,12 @@ ul li{
     margin: 5px;
     padding: 5px;
 }
-.container .udemy-images{
-    display: flex;
-    flex-direction: row;
+.Information .container .bubble-list .bubble img{
+    max-width: 500px;
+    width: 30%;
+    height: auto;
 }
-.container .udemy-images img{
-    min-width: 10px;
-    max-width: 20%;
-    width: 600px;
-    min-height: auto;
-}
+
 /*Used to Style Title Sections of the webpage*/
 .title{
     font-family: 'display font';
@@ -195,6 +187,7 @@ ul li{
 .bubble {
     display: inline;
     text-align: center;
+    margin: 5px;
 
     background-image: radial-gradient(rgb(46, 122, 189),rgb(202, 193, 164));
     padding: 2px;
