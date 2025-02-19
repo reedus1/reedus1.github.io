@@ -1,3 +1,4 @@
+
 //Loads a page in a new window
 function load_page_new(src)
 {
@@ -7,8 +8,4 @@ function load_page_new(src)
 function load_page(src)
 {
     window.location.href = (src);
-}
-function disable_context()
-{
-    document.addEventListener('contextmenu',(e) =>e.preventDefault());
 }
